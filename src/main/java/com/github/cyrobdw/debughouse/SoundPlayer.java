@@ -1,4 +1,4 @@
-package com.github.cyrobw.debughouse;
+package com.github.cyrobdw.debughouse;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;

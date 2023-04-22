@@ -1,6 +1,6 @@
-package com.github.cyrobw.debughouse.ui;
+package com.github.cyrobdw.debughouse.ui;
 
-import com.github.cyrobw.debughouse.BughouseBoard;
+import com.github.cyrobdw.debughouse.BughouseBoard;
 import com.github.bhlangonijr.chesslib.Piece;
 import com.github.bhlangonijr.chesslib.Side;
 import com.github.bhlangonijr.chesslib.Square;
@@ -15,7 +15,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;

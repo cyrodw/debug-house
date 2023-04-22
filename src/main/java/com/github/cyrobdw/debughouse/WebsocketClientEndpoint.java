@@ -1,4 +1,4 @@
-package com.github.cyrobw.debughouse;
+package com.github.cyrobdw.debughouse;
 
 import javax.websocket.*;
 import java.net.URI;

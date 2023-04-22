@@ -1,4 +1,4 @@
-package com.github.cyrobw.debughouse.ui;
+package com.github.cyrobdw.debughouse.ui;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

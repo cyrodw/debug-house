@@ -1,6 +1,6 @@
-package com.github.cyrobw.debughouse.ui;
+package com.github.cyrobdw.debughouse.ui;
 
-import com.github.cyrobw.debughouse.SoundPlayer;
+import com.github.cyrobdw.debughouse.SoundPlayer;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;

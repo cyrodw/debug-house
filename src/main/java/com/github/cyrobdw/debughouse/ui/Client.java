@@ -1,7 +1,7 @@
-package com.github.cyrobw.debughouse.ui;
+package com.github.cyrobdw.debughouse.ui;
 
-import com.github.cyrobw.debughouse.SoundPlayer;
-import com.github.cyrobw.debughouse.WebsocketClientEndpoint;
+import com.github.cyrobdw.debughouse.SoundPlayer;
+import com.github.cyrobdw.debughouse.WebsocketClientEndpoint;
 import com.github.bhlangonijr.chesslib.Side;
 import javafx.application.Application;
 import javafx.application.Platform;
