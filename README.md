@@ -1,6 +1,6 @@
-# Debug-house
+# Debughouse
 
-Debug-house - a client for chess variants
+Debughouse - a client for chess variants
 
 ## Description
 
