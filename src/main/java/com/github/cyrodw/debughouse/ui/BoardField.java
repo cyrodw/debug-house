@@ -1,4 +1,4 @@
-package com.github.cyrobdw.debughouse.ui;
+package com.github.cyrodw.debughouse.ui;
 
 import com.github.bhlangonijr.chesslib.Piece;
 import com.github.bhlangonijr.chesslib.Side;

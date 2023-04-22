@@ -1,6 +1,6 @@
-package com.github.cyrobdw.debughouse.ui;
+package com.github.cyrodw.debughouse.ui;
 
-import com.github.cyrobdw.debughouse.BughouseBoard;
+import com.github.cyrodw.debughouse.BughouseBoard;
 import com.github.bhlangonijr.chesslib.Piece;
 import com.github.bhlangonijr.chesslib.Side;
 import com.github.bhlangonijr.chesslib.Square;

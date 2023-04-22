@@ -1,4 +1,4 @@
-package com.github.cyrobdw.debughouse;
+package com.github.cyrodw.debughouse;
 
 import com.github.bhlangonijr.chesslib.*;
 import com.github.bhlangonijr.chesslib.move.Move;

@@ -1,4 +1,4 @@
-package com.github.cyrobdw.debughouse.ui;
+package com.github.cyrodw.debughouse.ui;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;

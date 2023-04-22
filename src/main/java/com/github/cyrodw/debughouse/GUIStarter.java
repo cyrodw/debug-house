@@ -1,6 +1,6 @@
-package com.github.cyrobdw.debughouse;
+package com.github.cyrodw.debughouse;
 
-import com.github.cyrobdw.debughouse.ui.Login;
+import com.github.cyrodw.debughouse.ui.Login;
 
 public class GUIStarter {
     public static void main(final String[] args) { Login.main(args); }
