@@ -119,7 +119,11 @@ public class Client extends Application {
      * @throws URISyntaxException
      */
     private void connect(String ip, String host) throws URISyntaxException {
-        clientEndPoint = new WebsocketClientEndpoint(new URI("ws://" + ip + ":" + host + "/?username=" + username + "&password=" + password));
+        if (host.equals("localhost"))
+            clientEndPoint = new WebsocketClientEndpoint(new URI("ws://" + ip + ":" + host + "/?username=" + username + "&password=" + password));
+        else
+            clientEndPoint = new WebsocketClientEndpoint(new URI("ws://" + ip + "/:" + host + "/?username=" + username + "&password=" + password));
+
         clientEndPoint.addMessageHandler(message -> {
             if (message.equals("connected")) {
                 Platform.runLater(() -> {
