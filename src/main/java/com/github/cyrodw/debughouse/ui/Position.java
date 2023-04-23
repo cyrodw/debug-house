@@ -128,7 +128,7 @@ public class Position extends GridPane {
                 premoves.add(move);
                 predrops.add(isPredrop);
             } else {
-                // Client.sendToChat("premove " + board.gameState.getSan(move)); // Premove suggestion
+                Client.sendToChat("premove " + board.gameState.getSan(move)); // Premove suggestion
             }
         } else if (board.gameState.isLegal(move)) {
             if (board.userBoard) {
@@ -139,7 +139,7 @@ public class Position extends GridPane {
                 board.fen = board.gameState.getFen();
                 board.updateClockTurns();
             } else {
-                // Client.sendToChat(board.gameState.getSan(move)); // Move suggestion
+                Client.sendToChat(board.gameState.getSan(move)); // Move suggestion
             }
         }
         if (board.userBoard) {

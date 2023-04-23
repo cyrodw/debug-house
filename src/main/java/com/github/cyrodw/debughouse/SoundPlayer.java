@@ -7,6 +7,7 @@ import java.util.Objects;
 
 public class SoundPlayer {
     public static void playSound(String sound) {
+        // Credit: https://thief.sourceforge.net/download.html
         String mediaURL = Objects.requireNonNull(SoundPlayer.class.getResource("/female_voicepack/" + sound)).toExternalForm();
         Media hit = new Media(mediaURL);
         MediaPlayer mediaPlayer = new MediaPlayer(hit);

@@ -583,14 +583,7 @@ public class Board extends Application {
             stage.setHeight(prefs.getDouble("right_board_height", squareSize * 11));
         }
 
-        BooleanProperty useBook = new SimpleBooleanProperty(false);
         scene.addEventHandler(KeyEvent.KEY_PRESSED, (key) -> {
-            if (key.getCode() == KeyCode.SPACE) {
-                if (useBook.get() == false) {
-                    Client.sendToServer("book on");
-                    useBook.set(true);
-                }
-            }
             if (key.getCode() == KeyCode.EQUALS) {
                 setSquareSize(squareSize + 1);
                 createComponents();
@@ -705,12 +698,6 @@ public class Board extends Application {
             }
         });
         scene.addEventHandler(KeyEvent.KEY_RELEASED, (key) -> {
-            if (key.getCode() == KeyCode.SPACE) {
-                if (useBook.get() == true) {
-                    Client.sendToServer("book off");
-                    useBook.set(false);
-                }
-            }
             if (key.getCode() == KeyCode.DIGIT1) {
                 if (dropPieceSelected == 1) {
                     setSelectedDrop(null);

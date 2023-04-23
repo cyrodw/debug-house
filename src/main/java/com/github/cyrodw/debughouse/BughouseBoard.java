@@ -2,6 +2,7 @@ package com.github.cyrodw.debughouse;
 
 import com.github.bhlangonijr.chesslib.*;
 import com.github.bhlangonijr.chesslib.move.Move;
+import com.github.bhlangonijr.chesslib.move.MoveList;
 
 import java.util.HashMap;
 
@@ -443,5 +444,23 @@ public class BughouseBoard {
             board.unsetPiece(occupied, sq);
         }
         board.setPiece(piece, sq);
+    }
+
+    /**
+     * Returns the SAN format string of a move
+     *
+     * @param move
+     */
+    public String getSan(String move) {
+        if (move.charAt(1) == '@') {
+            char drop = Character.toUpperCase(move.charAt(0));
+            if (move.charAt(0) == 'P') {
+                return "@" + move.substring(2, 4).toLowerCase();
+            }
+            return drop + "@" + move.substring(2, 4).toLowerCase();
+        }
+        Square from = Square.fromValue(move.substring(0, 2).toUpperCase());
+        Square to = Square.fromValue(move.substring(2, 4).toUpperCase());
+        return MoveList.encodeToSan(board, new Move(from, to));
     }
 }

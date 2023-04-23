@@ -119,7 +119,7 @@ public class Client extends Application {
      * @throws URISyntaxException
      */
     private void connect(String ip, String host) throws URISyntaxException {
-        clientEndPoint = new WebsocketClientEndpoint(new URI("ws://" + ip + "/:" + host + "/?username=" + username + "&password=" + password));
+        clientEndPoint = new WebsocketClientEndpoint(new URI("ws://" + ip + ":" + host + "/?username=" + username + "&password=" + password));
         clientEndPoint.addMessageHandler(message -> {
             if (message.equals("connected")) {
                 Platform.runLater(() -> {
@@ -134,7 +134,6 @@ public class Client extends Application {
                 case "started" -> Platform.runLater(() -> {
                     leftBoard.setPlaying(true);
                     rightBoard.setPlaying(true);
-                    SoundPlayer.playSound("Gamestart.wav");
                 });
                 case "finished" -> Platform.runLater(() -> {
                     leftBoard.setPlaying(false);
@@ -145,12 +144,12 @@ public class Client extends Application {
                     leftBoard.stopClocks();
                     rightBoard.reset();
                     rightBoard.stopClocks();
-                    SoundPlayer.playSound("Checkmate.wav");
                 });
                 case "userside" -> Platform.runLater(() -> {
                     Side userSide = Side.fromValue(args[1].toUpperCase());
                     leftBoard.setUserSide(userSide);
                     rightBoard.setUserSide(userSide.flip());
+                    SoundPlayer.playSound("Gamestart.wav");
                 });
                 case "fen1" -> Platform.runLater(() -> {
                     leftBoard.setPlaying(true);
