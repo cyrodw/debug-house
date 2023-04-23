@@ -134,6 +134,7 @@ public class Client extends Application {
                 case "started" -> Platform.runLater(() -> {
                     leftBoard.setPlaying(true);
                     rightBoard.setPlaying(true);
+                    SoundPlayer.playSound("Gamestart.wav");
                 });
                 case "finished" -> Platform.runLater(() -> {
                     leftBoard.setPlaying(false);
@@ -149,7 +150,6 @@ public class Client extends Application {
                     Side userSide = Side.fromValue(args[1].toUpperCase());
                     leftBoard.setUserSide(userSide);
                     rightBoard.setUserSide(userSide.flip());
-                    SoundPlayer.playSound("Gamestart.wav");
                 });
                 case "fen1" -> Platform.runLater(() -> {
                     leftBoard.setPlaying(true);
