@@ -11,7 +11,8 @@ A lightweight chess variant client primarily for Bughouse.
 ## Functionality
 
 * Conditional premoves
-* Predrop (Dropping piece not in hand) 
+* Predrops (Dropping piece not yet in hand)
+* Hotkeys for piece drops and ptells
 * Move suggestion on partner board
 
 ## Getting Started
